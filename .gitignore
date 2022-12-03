@@ -58,3 +58,8 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+
+#ファイルが大きすぎる
+Assets\TextMesh Pro\Fonts\NotoSansJP-Medium SDF.asset
+
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
