@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4508508278692380383}
   - component: {fileID: 4508508278692380376}
   m_Layer: 5
-  m_Name: storyselect
+  m_Name: Storyselect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,6 +46,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4508508278692380382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39619356c04de05478e1cb04a3a372ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 3abe8c623a1dbcd4aa58c59e5409f526, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
