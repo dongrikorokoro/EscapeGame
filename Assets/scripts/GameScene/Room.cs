@@ -7,6 +7,13 @@ public class Room : MonoBehaviour
     public GameObject[] rooms;
     private int now = 0;
 
+    void Start() {
+        for(int i = 0; i < rooms.Length; i++) {
+            rooms[i].SetActive(false);
+        }
+        rooms[now].SetActive(true);
+    }
+
     public void move(string direction) {
         rooms[now].SetActive(false);
 
