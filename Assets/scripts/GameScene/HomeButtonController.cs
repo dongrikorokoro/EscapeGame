@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 public class HomeButtonController : MonoBehaviour
 {
     public void clicked() {
-        SceneManager.LoadScene("SelectScene",LoadSceneMode.Single);
+        SceneManager.LoadScene("SelectEpisodeScene",LoadSceneMode.Single);
     }
 }

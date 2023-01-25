@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 public class SelectButtonController : MonoBehaviour
 {
   public void OnClick() {
-    SceneManager.LoadScene("GameScene",LoadSceneMode.Single);
+    SceneManager.LoadScene("SelectEpisodeScene",LoadSceneMode.Single);
   }
 }
