@@ -8,9 +8,13 @@ public class Item : MonoBehaviour
         Cube,
         Ball,
         Denkyu,
-        Key1,
-        Key2,
+        CloverKey,
+        HeartKey,
         cutter,
+        calender,
+        memo,
+        littleKey,
+        
     }
 
     public Type type;

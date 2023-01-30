@@ -6,7 +6,7 @@ using TMPro;
 
 public class TimerScript : MonoBehaviour
 {
-    private float totalTime;
+    public float totalTime;
     private int minute;
     private float seconds;
     //前のupdateの時の秒数

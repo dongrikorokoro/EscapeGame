@@ -6,6 +6,7 @@ public class ItemBox : MonoBehaviour
 {
     public Slot[] slots;
     public Slot selectedSlot = null;
+    public ZoomPanelController zoomPanel;
 
     public static ItemBox instance;
     private void Awake() {
@@ -15,12 +16,18 @@ public class ItemBox : MonoBehaviour
     }
 
     public void OnSelectedSlot(int position) {
-        foreach(Slot slot in slots) {
-            slot.HideBgPanel();
-        }
+        if(slots[position] == selectedSlot) {
+            zoomPanel.activePanel(slots[position].item);
+        } else {
+            foreach(Slot slot in slots) {
+                slot.HideBgPanel();
+            }
 
-        if(slots[position].OnSelected()) {
-            selectedSlot = slots[position];
+            if(slots[position].OnSelected()) {
+                selectedSlot = slots[position];
+            } else {
+                selectedSlot = null;
+            }
         }
     }
 
@@ -42,6 +49,17 @@ public class ItemBox : MonoBehaviour
             selectedSlot.setItem(null);
             selectedSlot.HideBgPanel();
             selectedSlot = null;
+            return true;
+        }
+        return false;
+    }
+
+    public bool TryUseItem(Item.Type type, int n) {
+        if(selectedSlot == null) {
+            return false;
+        }
+
+        if(selectedSlot.GetItem().type == type) {
             return true;
         }
         return false;

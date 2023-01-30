@@ -5,7 +5,11 @@ using UnityEngine;
 public class Room : MonoBehaviour
 {
     public GameObject[] rooms;
-    private int now = 0;
+    private int now;
+
+    void Awake() {
+        now = 0;
+    }
 
     void Start() {
         for(int i = 0; i < rooms.Length; i++) {
@@ -22,7 +26,7 @@ public class Room : MonoBehaviour
         } else {
             now--;
         }
-        if(now > 3) {
+        if(now > 4) {
             now = 0;
         } else if(now < 0) {
             now = 3;

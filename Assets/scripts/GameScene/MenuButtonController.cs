@@ -6,6 +6,10 @@ public class MenuButtonController : MonoBehaviour
 {
     public GameObject menuPanel;
 
+    void Awake() {
+        menuPanel.SetActive(false);
+    }
+
     public void OnClick() {
         if(menuPanel.activeSelf == false) {
             menuPanel.SetActive(true);
